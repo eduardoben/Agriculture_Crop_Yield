@@ -12,8 +12,6 @@ Build a **predictive model** that estimates crop yield (tons/ha) from agronomic,
   - **Numeric:** `Rainfall_mm`, `Temperature_Celsius`, `Days_to_Harvest`, `Fertilizer_Used`, `Irrigation_Used` (and related indicators)
 - **Notes:** The notebook performs schema inspection (`df.info()`, `df.describe()`), checks for missing values/outliers, and applies **one‑hot encoding** to categorical fields before modeling.
 
-> If your CSV lives elsewhere, update the path in the first cell of the notebook:  
-> `df = pd.read_csv("path/to/crop_yield.csv")`
 
 ## Analysis Workflow
 ### 1) Exploratory Data Analysis (EDA)
