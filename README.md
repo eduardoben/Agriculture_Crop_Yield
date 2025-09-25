@@ -48,14 +48,12 @@ Across runs in the notebook, **Linear Regression, XGBoost, and MLP achieve compa
 - Prefer **XGBoost** when you expect **nonlinearities** or **feature interactions** (e.g., weather × soil).
 - Consider **MLP** only if additional engineered features or larger datasets reveal patterns that tree‑based models cannot capture.
 
-> Practical takeaway: If accuracy gains from complex models are marginal, **deploy Linear Regression** first, and graduate to XGBoost/MLP only when justified by measurable improvements or new requirements.
-
 ## Conclusion
 This workflow demonstrates a **robust, end‑to‑end pipeline** for predicting crop yield:
 1. Careful EDA to understand data quality and key drivers.
 2. Solid preprocessing (encoding + scaling) tailored to tabular ML.
 3. A **model comparison** that balances accuracy with interpretability and cost.
-4. Clear guidance for **model selection**: default to the simplest model that meets performance targets, and iterate toward complexity only as needed.
+4. Clear guidance for **model selection**: default to the simplest model that meets performance targets, and iterate toward complexity only as needed. Linear regression is recommended for this dataset because of the simplicity and its performance.
 
 ## Reproducibility & Environment Notes
 - **Random seed:** `42` (used throughout for splits and training reproducibility).
